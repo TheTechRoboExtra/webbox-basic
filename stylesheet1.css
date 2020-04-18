@@ -117,3 +117,33 @@ margin-right: 500px;
     font-size: 16px;
     cursor: pointer;
 }
+
+.button {
+    background-color: red;
+    border: solid;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 10px;
+	
+}
+        
+        
+        
+        
+.version       
+{
+    background-color: lightgreen;
+    border: solid;
+    color: darkblue;
+    padding: 16px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+	border-radius: 10px;
+	margin-right
+}        
