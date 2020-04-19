@@ -1,4 +1,65 @@
 <title>Software</title>
+<span style="font-size:30px;cursor:pointer;color:#ffffff" onclick="openNav()">&#9776; Menu</span>
 <link rel="stylesheet" type="text/css" href="stylesheet1.css" />
 <h1 style="color:#FFFFFF">Software</h1>
 <p style="color:#FFFFFF">This part of the site shows off my software.
+<br /><br />
+</p>
+<h2 style="color:#FFFFFF">BGLUGwatch</h2>
+<p style="oclor:#FFFFFF">BGLUGwatch is a simple Tkinter program less than 1MB. It shows off the BGLUG website and is continuously updated.
+  Need binaries?
+  <div class="dropdown">
+  <button class="dropbtn">BGLUGwatch binaries</button>
+  <div class="dropdown-content">
+    <a href="https://github.com/TheTechRobo/bglugwatch-binaries/raw/master/dist/bglug-amd64-debian-v.0.2.8-stable" target="_blank" download="bglugwatch-amd64-debian">Debian amd64</a>
+  </div>
+</div>
+</p>
+<!--SEPERATOR-->
+<script>
+            
+            var menuDisplayed = false;
+        var menuBox = null;
+           
+       window.addEventListener("contextmenu", function() {
+        var left = arguments[0].clientX;
+        var top = arguments[0].clientY;
+                
+        menuBox = window.document.querySelector(".menu");
+        menuBox.style.left = left + "px";
+        menuBox.style.top = top + "px";
+        menuBox.style.display = "block";
+                       
+        arguments[0].preventDefault();
+        menuDisplayed = true;
+        }, false);
+        window.addEventListener("click", function() {
+        if(menuDisplayed == true){
+        menuBox.style.display = "none"; 
+        }
+        }, true);
+        
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+
+        </script>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="menu-item" onclick="openNav()">Open Menu</div>
+                <div class="menu-item" <a href="index.html">Go to index</a></div>
+        </div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="https://thetechrobo.github.io">Archived website</a>
+        <a href="index.html">Back to home</a>
+    <a href="software.html">Software</a>
+    <a href="about.html">About me</a>
+    <a href="other.html">Other</a>
+    <a href="https://owenssite.000webhostapp.com">A great website!</a>
+</div>
