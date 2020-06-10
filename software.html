@@ -1,7 +1,7 @@
 <title>Software</title>
 <span style="font-size:30px;cursor:pointer;color:#ffffff" onclick="openNav()">&#9776; Menu</span>
 <link rel="stylesheet" type="text/css" href="stylesheet1.css" />
-<a style="color:#000000" href="http://owenssite.000webhostapp.com/NPA/LoadingNPA.htm">.</a>
+<a style="color:#000000" href="http://trm.ddns.net">.</a>
 <h1 style="color:#FFFFFF">Software</h1>
 <p style="color:#FFFFFF">This part of the site shows off my software.
 <br /><br />
@@ -16,45 +16,43 @@
 </div>
 </p>
 <h2 style="color:#FFFFFF">Palc</h2>
-<p style="color:#FFFFFF">Palc is a CLI (command line interface) program that is a decent calculator. It doesn't (yet) have any scientific functions BUT... it is good for basics (includes area and volume functions!).
+<p style="color:#FFFFFF">Palc is a CLI (command line interface) program that is an amazing calculator. Includes area and volume functions!.
 </p>
   <div class="dropdown">
   <button class="dropbtn">Palc</button>
   <div class="dropdown-content">
     <a href="https://github.com/thetechrobo/python-text-calculator" target="_blank">Go</a>
-  <!--SEPERATOR-->
-<script>
+  <!--SEPARATOR-->
+  <script>
+  var menuDisplayed = false;
+var menuBox = null;
             
-            var menuDisplayed = false;
-        var menuBox = null;
-           
-       window.addEventListener("contextmenu", function() {
-        var left = arguments[0].clientX;
-        var top = arguments[0].clientY;
+window.addEventListener("contextmenu", function() {
+var left = arguments[0].clientX;
+var top = arguments[0].clientY;
                 
-        menuBox = window.document.querySelector(".menu");
-        menuBox.style.left = left + "px";
-        menuBox.style.top = top + "px";
-        menuBox.style.display = "block";
-                       
-        arguments[0].preventDefault();
-        menuDisplayed = true;
-        }, false);
-        window.addEventListener("click", function() {
-        if(menuDisplayed == true){
-        menuBox.style.display = "none"; 
-        }
-        }, true);
-        
-        function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        }
-        
-        function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        }
+menuBox = window.document.querySelector(".menu");
+menuBox.style.left = left + "px";
+menuBox.style.top = top + "px";
+menuBox.style.display = "block";
+               
+arguments[0].preventDefault();
+menuDisplayed = true;
+}, false);
+window.addEventListener("click", function() {
+if(menuDisplayed == true){
+  menuBox.style.display = "none"; 
+}
+}, true);
 
-        </script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
     </head>
     <body>
         <div class="menu">
