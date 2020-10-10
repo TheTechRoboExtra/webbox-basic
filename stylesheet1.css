@@ -245,7 +245,7 @@ margin-right: 500px;
             }
 body {
     font-family: "Lato", sans-serif;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .sidenav {
