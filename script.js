@@ -1,3 +1,7 @@
+var script = document.createElement('script'); 
+script.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
+document.head.appendChild(script) 
+
 $(function() {
 
     $("#nav").load("nav.html");
