@@ -1,8 +1,21 @@
+<!--Source; http://owenssite.000webhostapp.com/page/p3.html-->
 <!DOCTYPE html>
+<!--Login Functionality-->
+<script 
+        language="JavaScript" src="https://www.authpro.com/auth/Thetechrobo/?action=pp"> 
+</script> 
+<!--End of Login Functionality-->
 <html>
-  <span style="font-size:30px;cursor:pointer;color:#ffffff" onclick="openNav()">&#9776; Menu</span>
-  <link rel="stylesheet" type="text/css" href="stylesheet1.css" />
-  <title>Err404</title>
+    <head>
+        <title>TheGitRobo</title>
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <div id="nav"><script src="script.js"></script></div> <!--load navbar-->
+        <!--END OF NAVIGATION BAR CODE-->
+        <link rel="stylesheet" type="text/css" href="stylesheet1.css">
+  <title>Error:004</title>
   <p>Sorry, I couldn't find the page you were looking for.<br />Maybe you stumbled upon a broken link. <br />Try resetting your cache. It should be in your browser settings.</p>
   <input type="button" class="dropbtn" value="Back to the last page" onclick="history.back()">
   <style>
@@ -10,43 +23,3 @@
       color: #FFFFFF
     }
   </style>
-  <!--SEPARATOR-->
-  <script>
-  var menuDisplayed = false;
-var menuBox = null;
-            
-window.addEventListener("contextmenu", function() {
-var left = arguments[0].clientX;
-var top = arguments[0].clientY;
-                
-menuBox = window.document.querySelector(".menu");
-menuBox.style.left = left + "px";
-menuBox.style.top = top + "px";
-menuBox.style.display = "block";
-               
-arguments[0].preventDefault();
-menuDisplayed = true;
-}, false);
-window.addEventListener("click", function() {
-if(menuDisplayed == true){
-  menuBox.style.display = "none"; 
-}
-}, true);
-
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-  </script>
-  <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-   <a href="https://thetechrobo.github.io">Archived website</a>
-        <a href="index.html">Back to home</a>
-    <a href="software.html">Software</a>
-    <a href="about.html">About me</a>
-    <a href="membersarea.html">Secret Stuff</a>
-    <a href="https://owenssite.000webhostapp.com">A great website!</a>
-</div>
