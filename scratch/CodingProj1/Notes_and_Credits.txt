@@ -28,3 +28,4 @@ v.0.0.8.2-stable; Add original PacMan. Probably I forgot other changes but that'
 v.0.0.9-stable; Bugfixes. Minor changes. Second strawberry completed. Remove useless code. 
 v.0.1.0-stable; Third and fourth strawberries completed. Minor changes. Add basis for cool new feature. A bugfix or two.
 v.0.1.1-stable; Minor changes. Implement new ending. Share project. Probably the last version.
+v.0.1.2-stable; Ok I was wrong. Sue me. Fix "-1 to 10" to "0 to 10".
