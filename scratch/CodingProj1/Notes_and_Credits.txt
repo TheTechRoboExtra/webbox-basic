@@ -26,4 +26,4 @@ v.0.0.7-stable; Fix all the coordinates except PacMan. Fix PacMan skin because I
 v.0.0.8-stable; Fix PacMan coordinates. Remove useless code that wasn't doing anything. Fix remnant of debugging what was wrong with eatEatEat (it was that the strawberries were all piled up) where eatEatEat was outside of the main function. Minor improvements.
 v.0.0.8.2-stable; Add original PacMan. Probably I forgot other changes but that's the major change.
 v.0.0.9-stable; Bugfixes. Minor changes. Second strawberry completed. Remove useless code. 
-v.0.1-stable; Third and fourth strawberries completed. Minor changes.
+v.0.1-stable; Third and fourth strawberries completed. Minor changes. Add basis for cool new feature. 
