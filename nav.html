@@ -1,60 +1,14 @@
-<script>
-            
-            var menuDisplayed = false;
-            var menuBox = null;
-            
-            window.addEventListener("contextmenu", function() {
-                var left = arguments[0].clientX;
-                var top = arguments[0].clientY;
-                
-                menuBox = window.document.querySelector(".menu");
-                menuBox.style.left = left + "px";
-                menuBox.style.top = top + "px";
-                menuBox.style.display = "block";
-                
-                arguments[0].preventDefault();
-                
-                menuDisplayed = true;
-            }, false);
-            
-            window.addEventListener("click", function() {
-                if(menuDisplayed == true){
-                    menuBox.style.display = "none"; 
-                }
-            }, true);
-        </script>
-        
-        <div class="menu">
-            <div class="menu-item" onclick="openNav()">Open Menu</div>
-            <div class="menu-item" a href="/index.html">Go to index</div>
-        </div>
-<noscript>
-            <!--add stylesheet; its in a noscript so it doesnt lag everything out in embeds--><link type="text/css" rel="stylesheet" href="stylesheet1.css">
-            <!--fix the menu--> <style>.sidenav { width: 250; }</style>
+<link type="text/css" rel="stylesheet" href="stylesheet1.css">
+<!--fix the menu--> <style>.sidenav { width: 250; }</style>
 </noscript>
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
    <a href="https://thetechrobo.github.io/">Archived website</a>
     <a href="https://thetechrobo.github.io/webbox">Home</a>
     <a href="software.html">Software</a>
     <a href="about.html">About me</a>
-    <a href="https://thetechrobo.github.io/kickStartSite">Blog</a>
     <a href="articles.html">Articles</a>
     <a href="other.html">Other</a>
-    <a href="memberarea.html">Secret Stuff</a>
     <a href="http://trm.ddns.net">A great website!</a>
             <font size="12"><p style="color:#FFFFFF;font-size:12px">
     Have a problem? Submit a <a href="https://github.com/thetechrobo/webbox/issues" style="font-size: 12px">bug report</a> or <a href="https://github.com/thetechobo/webbox" style="font-size: 10">fix it yourself</a>.</font></p> 
 </div>
-
-<span style="font-size:30px;cursor:pointer;color:#ffffff" onclick="openNav()">&#9776; Menu</span>
-
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>
